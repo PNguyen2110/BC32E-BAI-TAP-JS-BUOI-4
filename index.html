@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    fieldset {
+        width: 35rem;
+        margin: 100px auto;
+        border: 5px solid rgb(99, 99, 194);
+        border-radius:20%  ;
+        height:300px;
+    }
+    legend {
+        color:red
+    }
+    p{
+        background-color:rgb(99, 99, 194);
+        color:white;
+        width:90%;
+        font-size:20px;
+        text-align: center;
+    }
+    
+    
+</style>
+
+<body>
+    <!-- BÀI 1: SẮP XẾP THEO THỨ TỰ TĂNG DẦN -->
+
+    <fieldset>
+        <form class="ml-5 mt-2"  action="#">
+
+            <legend>BÀI 1: SẮP XẾP THEO THỨ TỰ TĂNG DẦN</legend>
+            <div>
+                <label for="soThu1">Nhập số thứ 1:</label>
+                <input class="ml-2" id="soThu1" type="number">
+            </div>
+            <div>
+                <label for="soThu2">Nhập số thứ 2:</label>
+                <input class="ml-2" id="soThu2" type="number">
+            </div>
+            <div>
+                <label for="soThu3">Nhập số thứ 3:</label>
+                <input class="ml-2" id="soThu3" type="number">
+            </div>
+            <br>
+            <div>
+                <button class="btn btn-primary" id="btnSapXep">Sắp xếp thứ tự các số</button>
+            </div>
+            <br>
+            <p id="pSapXep"></p>
+        </form>
+
+
+    </fieldset>
+
+    <!-- BÀI 2: VIẾT CHƯƠNG TRÌNH CHÀO HỎI -->
+
+<fieldset>
+        <form class="ml-5 mt-2"  action="#">
+
+            <legend>BÀI 2: VIẾT CHƯƠNG TRÌNH CHÀO HỎI</legend>
+            <div>
+                <label for="xinChao">Nhập người đang sử dụng máy tính:</label>
+                <p style="font-size:1rem"><i>Chỉ cần nhập chữ cái đầu. Ví dụ: Bố = B, Mẹ = M, Anh = A, Em = E</i></p>
+                <input class="ml-2" id="xinChao" type="text" placeholder="ví dụ: Bố = B">
+            </div>
+            
+            <br>
+            <div>
+                <button class="btn btn-primary" id="btnXacNhan">XÁC NHẬN</button>
+            </div>
+            <br>
+            <p id="pXacNhan"></p>
+        </form>
+
+
+    </fieldset>
+    
+    <!-- BÀI 3: TÍNH SỐ CHẴN, LẺ -->
+
+    <fieldset>
+        <form class="ml-5 mt-2"  action="#">
+
+            <legend>BÀI 3: TÍNH SỐ CHẴN, LẺ</legend>
+            <div>
+                <label for="so1">Nhập số thứ 1:</label>
+                <input class="ml-2" id="so1" type="number"> 
+            </div>
+            <div>
+                <label for="so2">Nhập số thứ 2:</label>
+                <input class="ml-2" id="so2" type="number"> 
+            </div>
+            <div>
+                <label for="so3">Nhập số thứ 3:</label>
+                <input class="ml-2" id="so3" type="number"> 
+            </div>
+            <br>
+            <span><i>(ô trống có giá trị là 0(số chẵn))</i></span>
+            <br>
+            <br>
+            <div>
+                <button class="btn btn-primary" id="btnChanLe">TÍNH SỐ CHẴN LẺ</button>
+            </div>
+            <br>
+            <p id="pChanLe"></p>
+        </form>
+
+
+    </fieldset>
+
+
+    <!-- BÀI 4: XÁC ĐỊNH TAM GIÁC -->
+
+    <fieldset>
+        <form class="ml-5 mt-2"  action="#">
+
+            <legend>BÀI 4: XÁC ĐỊNH TAM GIÁC</legend>
+            <div>
+                <label for="canh1">Nhập số thứ 1:</label>
+                <input class="ml-2" id="canh1" type="number">
+            </div>
+            <div>
+                <label for="canh2">Nhập số thứ 2:</label>
+                <input class="ml-2" id="canh2" type="number">
+            </div>
+            <div>
+                <label for="canh3">Nhập số thứ 3:</label>
+                <input class="ml-2" id="canh3" type="number">
+            </div>
+            <br>
+            <div>
+                <button class="btn btn-primary" id="btnDuDoan">DỰ ĐOÁN</button>
+            </div>
+            <br>
+            <p id="pDuDoan"></p>
+        </form>
+
+
+    </fieldset>
+
+
+
+
+
+
+    <script src="./main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
